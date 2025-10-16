@@ -1,0 +1,8 @@
+opencv-python
+scipy
+pyYAML
+numpy
+pygame
+PyOpenGL
+PyOpenGL-accelerate
+matplotlib
