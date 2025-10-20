@@ -1,11 +1,13 @@
 """
 Configuration Module
-Contains all camera and simulation parameters
+Contains all camera, simulation, and tracking parameters
 """
 
 from .camera_config import *
+from .tracking_config import *
 
 __all__ = [
+    # Camera and simulation config
     "TABLE_TENNIS_BALL_DIAMETER_MM",
     "SENSOR_WIDTH_MM",
     "SENSOR_HEIGHT_MM",
@@ -27,4 +29,26 @@ __all__ = [
     "COLOR_BOTTOM_HEMISPHERE",
     "TARGET_FPS",
     "RECORDING_OUTPUT_FOLDER",
+    # Tracking config
+    "HSV_LOWER_ORANGE",
+    "HSV_UPPER_ORANGE",
+    "HSV_LOWER_BLUE",
+    "HSV_UPPER_BLUE",
+    "MORPH_ERODE_ITERATIONS",
+    "MORPH_DILATE_ITERATIONS",
+    "MORPH_KERNEL_SIZE",
+    "MIN_DETECTION_RADIUS_PX",
+    "MIN_CONTOUR_AREA_PX2",
+    "MAX_TRACKED_OBJECTS",
+    "VIS_COLOR_DETECTION_CIRCLE",
+    "VIS_COLOR_CENTROID",
+    "VIS_COLOR_TRAJECTORY",
+    "VIS_CIRCLE_THICKNESS",
+    "VIS_CENTROID_RADIUS",
+    "VIS_TRAJECTORY_THICKNESS",
+    "MAX_TRAJECTORY_POINTS",
+    "CAMERA_INDEX",
+    "CAMERA_WIDTH",
+    "CAMERA_HEIGHT",
+    "CAMERA_FPS",
 ]

@@ -1,8 +1,15 @@
-opencv-python
-scipy
-pyYAML
-numpy
-pygame
-PyOpenGL
-PyOpenGL-accelerate
-matplotlib
+# Core dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+
+# Simulation (OpenGL)
+pygame>=2.0.0
+PyOpenGL>=3.1.0
+PyOpenGL-accelerate>=3.1.0
+
+# Optional: Scientific computing and visualization
+scipy>=1.7.0
+matplotlib>=3.4.0
+
+# Optional: Configuration file support
+PyYAML>=5.4.0
