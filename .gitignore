@@ -7,10 +7,16 @@ __pycache__/
 *$py.class
 *.so
 
-# Virtual environment
+# Virtual environment (pip)
 venv/
 env/
 ENV/
+
+# Conda environments
+envs/
+.conda/
+*.conda
+conda-meta/
 
 # IDE
 .vscode/

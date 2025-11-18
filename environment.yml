@@ -1,0 +1,36 @@
+# environment.yml
+
+# 1. Name für deine Conda-Umgebung
+name: simulation-env
+
+# 2. Kanäle (conda-forge hat Priorität)
+channels:
+  - conda-forge
+  - defaults
+
+# 3. Abhängigkeiten
+dependencies:
+  # Python-Version (wähle eine, die zu deinem Projekt passt)
+  - python=3.10
+
+  # Core dependencies (aus deiner .txt)
+  - numpy>=1.21.0
+
+  # Simulation (OpenGL)
+  - pygame>=2.0.0
+  - pyopengl>=3.1.0      # Conda-Name für 'PyOpenGL'
+  - pyopengl-accelerate>=3.1.0
+
+  # Optional: Scientific/visualization
+  - scipy>=1.7.0
+  - matplotlib>=3.4.0
+
+  # Optional: Config
+  - pyyaml>=5.4.0        # Conda-Name für 'PyYAML'
+
+  # pip für pip-only packages
+  - pip
+
+  # Packages die nur über pip verfügbar sind
+  - pip:
+    - opencv-python>=4.5.0
